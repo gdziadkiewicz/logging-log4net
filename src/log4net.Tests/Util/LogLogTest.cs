@@ -81,7 +81,7 @@ public class LogLogTest
     LogLog.Error(GetType(), "This will be recorded.");
     LogLog.Error(GetType(), "This will be recorded.");
 
-    Assert.That(messages, Has.Count.EqualTo(2));
+    Assert.That(messages, Has.Count.EqualTo(42));
   }
   
   /// <summary>
@@ -118,7 +118,7 @@ public class LogLogTest
     });
   }
 }
-asdassad
+
 internal sealed class TraceListenerCounter : TraceListener
 {
   public override void Write(string? message) => Count++;
